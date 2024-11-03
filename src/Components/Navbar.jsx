@@ -7,7 +7,7 @@ const Navbar = () => {
     const links=<>
      <li><NavLink 
      className={({ isActive }) =>
-                `font-bold ${isActive ? 'text-warning' : 'hover:text-warning'}`
+                `font-bold ${isActive ? 'bg-slate-800 text-white' : 'hover:text-warning'}`
               } to='/'>Home</NavLink ></li>
      <li><NavLink className={({ isActive }) =>
                 `font-bold ${isActive ? 'text-warning' : 'hover:text-warning'}`
@@ -18,7 +18,7 @@ const Navbar = () => {
 
     </>
     return (
-        <div className="navbar bg-base-100 container mx-auto">
+        <div className="navbar bg-base-100 pt-5">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -41,7 +41,7 @@ const Navbar = () => {
                        {links}
                     </ul>
                 </div>
-                <a className="font-bold text-xl">Gadget Heaven</a>
+                <a className="btn font-bold text-xl bg-white border-none">Gadget Heaven</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -49,8 +49,18 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end flex gap-4">
-                <a className="border p-2 rounded-full text-xl"><IoCartOutline /></a>
-                <a className="border p-2 rounded-full text-xl"><FaRegHeart /></a>
+            {/* <div className="indicator">
+  <span className="indicator-item badge badge-secondary bg-white text-black border-gray-300">1</span>
+  <a className="btn bg-white border px-3  rounded-full text-xl"><IoCartOutline /></a>
+</div> */}
+<a className="btn bg-white border px-3  rounded-full text-xl"><IoCartOutline /></a>
+<a className="btn bg-white border px-3 rounded-full text-xl"><FaRegHeart /></a>
+{/* <div className="indicator">
+  <span className="indicator-item badge badge-secondary bg-white text-black border-gray-300">1</span>
+  <a className="btn bg-white border px-3 rounded-full text-xl"><FaRegHeart /></a>
+</div> */}
+               
+             
 
             </div>
         </div>
