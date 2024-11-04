@@ -1,125 +1,123 @@
-{
-    "gadgets": [
-      {
-        "product_id": "comp-01",
-        "product_title": "High-Performance Laptop",
-        "product_image": "https://i.ibb.co.com/2tq9bGX/High-Performance-Laptop.jpg",
-        "category": "Computers",
-        "price": 899,
-        "description": "A powerful laptop with 16GB RAM and 512GB SSD.",
-        "specification": ["16GB RAM", "512GB SSD", "Intel i7 Processor"],
-        "availability": true,
-        "rating": 4.5,
-        "other_field": "Includes 1-year warranty"
-      },
-      {
-        "product_id": "comp-02",
-        "product_title": "All-in-One Desktop",
-        "product_image": "https://i.ibb.co.com/JKjqCJj/All-in-One-Desktop.jpg",
-        "category": "Computers",
-        "price": 1200,
-        "description": "A sleek all-in-one desktop with 1TB HDD.",
-        "specification": ["23-inch display", "8GB RAM", "1TB HDD"],
-        "availability": true,
-        "rating": 4.2,
-        "other_field": "Free keyboard and mouse included"
-      },
-      {
-        "product_id": "comp-03",
-        "product_title": "Gaming PC",
-        "product_image": "https://i.ibb.co.com/0VD314c/Gaming-PC.jpg",
-        "category": "Computers",
-        "price": 1500,
-        "description": "High-performance gaming PC with RTX graphics.",
-        "specification": ["RTX 3060", "16GB RAM", "512GB SSD"],
-        "availability": true,
-        "rating": 4.8,
-        "other_field": "RGB lighting"
-      },
-      {
-        "product_id": "comp-04",
-        "product_title": "Portable Laptop",
-        "product_image": "https://i.ibb.co.com/L5nzx5B/Portable-Laptop.jpg",
-        "category": "Computers",
-        "price": 750,
-        "description": "Lightweight laptop with 8GB RAM and 256GB SSD.",
-        "specification": ["8GB RAM", "256GB SSD", "Intel i5 Processor"],
-        "availability": true,
-        "rating": 4.3,
-        "other_field": "Long battery life"
-      },
-      {
-        "product_id": "comp-05",
-        "product_title": "Chromebook",
-        "product_image": "https://i.ibb.co.com/sgbXdm2/chromebook.jpg",
-        "category": "Computers",
-        "price": 300,
-        "description": "Affordable Chromebook with 4GB RAM and 64GB storage.",
-        "specification": ["4GB RAM", "64GB eMMC", "Chrome OS"],
-        "availability": true,
-        "rating": 4.0,
-        "other_field": "Ideal for students"
-      },
-      {
-        "product_id": "comp-06",
-        "product_title": "Business Laptop",
-        "product_image": "https://i.ibb.co.com/nDVJm6P/Business-Laptop.jpg",
-        "category": "Computers",
-        "price": 1000,
-        "description": "Professional laptop for business use with 1TB SSD.",
-        "specification": ["1TB SSD", "16GB RAM", "Intel i7 Processor"],
-        "availability": true,
-        "rating": 4.6,
-        "other_field": "Comes with Windows 11 Pro"
-      },
-      {
-        "product_id": "phone-01",
-        "product_title": "Flagship Smartphone",
-        "product_image": "https://i.ibb.co.com/4R4vyfp/Flagship-Smartphone.jpg",
-        "category": "Phones",
-        "price": 999,
-        "description": "High-end smartphone with 128GB storage.",
-        "specification": ["128GB Storage", "12MP Camera", "OLED Display"],
-        "availability": true,
-        "rating": 4.7,
-        "other_field": "Supports 5G"
-      },
-      {
-        "product_id": "phone-02",
-        "product_title": "Budget Smartphone",
-        "product_image": "https://i.ibb.co.com/k3n6zHp/Budget-Smartphone.jpg",
-        "category": "Phones",
-        "price": 150,
-        "description": "Affordable smartphone with 32GB storage.",
-        "specification": ["32GB Storage", "8MP Camera", "LCD Display"],
-        "availability": true,
-        "rating": 3.9,
-        "other_field": "Long-lasting battery"
-      },
-      {
-        "product_id": "charger-01",
-        "product_title": "Fast Charger",
-        "product_image": "https://i.ibb.co.com/ygxMp8P/Fast-Charger.jpg",
-        "category": "Chargers",
-        "price": 60,
-        "description": "Quick charging adapter with USB-C compatibility.",
-        "specification": ["USB-C", "30W Power Output"],
-        "availability": true,
-        "rating": 4.4,
-        "other_field": "Compact and portable"
-      },
-      {
-        "product_id": "charger-02",
-        "product_title": "Wireless Charger",
-        "product_image": "https://i.ibb.co.com/9ywKk2m/Wireless-Charger.jpg",
-        "category": "Chargers",
-        "price": 80,
-        "description": "Wireless charger for Qi-enabled devices.",
-        "specification": ["Qi-compatible", "10W Output"],
-        "availability": true,
-        "rating": 4.5,
-        "other_field": "Supports fast wireless charging"
-      }
-    ]
+[
+  {
+    "product_id": "1",
+    "product_title": "High-Performance Laptop",
+    "product_image": "https://i.ibb.co.com/2tq9bGX/High-Performance-Laptop.jpg",
+    "category": "Computers",
+    "price": 899,
+    "description": "A powerful laptop with 16GB RAM and 512GB SSD.",
+    "specification": ["16GB RAM", "512GB SSD", "Intel i7 Processor"],
+    "availability": true,
+    "rating": 4.5,
+    "other_field": "Includes 1-year warranty"
+  },
+  {
+    "product_id": "2",
+    "product_title": "All-in-One Desktop",
+    "product_image": "https://i.ibb.co.com/JKjqCJj/All-in-One-Desktop.jpg",
+    "category": "Computers",
+    "price": 1200,
+    "description": "A sleek all-in-one desktop with 1TB HDD.",
+    "specification": ["23-inch display", "8GB RAM", "1TB HDD"],
+    "availability": true,
+    "rating": 4.2,
+    "other_field": "Free keyboard and mouse included"
+  },
+  {
+    "product_id": "3",
+    "product_title": "Gaming PC",
+    "product_image": "https://i.ibb.co.com/0VD314c/Gaming-PC.jpg",
+    "category": "Computers",
+    "price": 1500,
+    "description": "High-performance gaming PC with RTX graphics.",
+    "specification": ["RTX 3060", "16GB RAM", "512GB SSD"],
+    "availability": true,
+    "rating": 4.8,
+    "other_field": "RGB lighting"
+  },
+  {
+    "product_id": "4",
+    "product_title": "Portable Laptop",
+    "product_image": "https://i.ibb.co.com/L5nzx5B/Portable-Laptop.jpg",
+    "category": "Computers",
+    "price": 750,
+    "description": "Lightweight laptop with 8GB RAM and 256GB SSD.",
+    "specification": ["8GB RAM", "256GB SSD", "Intel i5 Processor"],
+    "availability": true,
+    "rating": 4.3,
+    "other_field": "Long battery life"
+  },
+  {
+    "product_id": "5",
+    "product_title": "Chromebook",
+    "product_image": "https://i.ibb.co.com/sgbXdm2/chromebook.jpg",
+    "category": "Computers",
+    "price": 300,
+    "description": "Affordable Chromebook with 4GB RAM and 64GB storage.",
+    "specification": ["4GB RAM", "64GB eMMC", "Chrome OS"],
+    "availability": true,
+    "rating": 4.0,
+    "other_field": "Ideal for students"
+  },
+  {
+    "product_id": "6",
+    "product_title": "Business Laptop",
+    "product_image": "https://i.ibb.co.com/nDVJm6P/Business-Laptop.jpg",
+    "category": "Computers",
+    "price": 1000,
+    "description": "Professional laptop for business use with 1TB SSD.",
+    "specification": ["1TB SSD", "16GB RAM", "Intel i7 Processor"],
+    "availability": true,
+    "rating": 4.6,
+    "other_field": "Comes with Windows 11 Pro"
+  },
+  {
+    "product_id": "1",
+    "product_title": "Flagship Smartphone",
+    "product_image": "https://i.ibb.co.com/4R4vyfp/Flagship-Smartphone.jpg",
+    "category": "Phones",
+    "price": 999,
+    "description": "High-end smartphone with 128GB storage.",
+    "specification": ["128GB Storage", "12MP Camera", "OLED Display"],
+    "availability": true,
+    "rating": 4.7,
+    "other_field": "Supports 5G"
+  },
+  {
+    "product_id": "2",
+    "product_title": "Budget Smartphone",
+    "product_image": "https://i.ibb.co.com/k3n6zHp/Budget-Smartphone.jpg",
+    "category": "Phones",
+    "price": 150,
+    "description": "Affordable smartphone with 32GB storage.",
+    "specification": ["32GB Storage", "8MP Camera", "LCD Display"],
+    "availability": true,
+    "rating": 3.9,
+    "other_field": "Long-lasting battery"
+  },
+  {
+    "product_id": "1",
+    "product_title": "Fast Charger",
+    "product_image": "https://i.ibb.co.com/ygxMp8P/Fast-Charger.jpg",
+    "category": "Chargers",
+    "price": 60,
+    "description": "Quick charging adapter with USB-C compatibility.",
+    "specification": ["USB-C", "30W Power Output"],
+    "availability": true,
+    "rating": 4.4,
+    "other_field": "Compact and portable"
+  },
+  {
+    "product_id": "2",
+    "product_title": "Wireless Charger",
+    "product_image": "https://i.ibb.co.com/9ywKk2m/Wireless-Charger.jpg",
+    "category": "Chargers",
+    "price": 80,
+    "description": "Wireless charger for Qi-enabled devices.",
+    "specification": ["Qi-compatible", "10W Output"],
+    "availability": true,
+    "rating": 4.5,
+    "other_field": "Supports fast wireless charging"
   }
+]
   

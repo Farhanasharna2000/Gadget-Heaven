@@ -1,30 +1,27 @@
-{
-    "categories": [
-      {
-        "category_id": "cat-01",
-        "category_name": "Computers",
-        "description": "A wide selection of laptops, desktops, and Chromebooks suitable for personal and professional use."
-      },
-      {
-        "category_id": "cat-02",
-        "category_name": "Phones",
-        "description": "Latest smartphones, from flagship to budget options, for all your communication needs."
-      },
-      {
-        "category_id": "cat-03",
-        "category_name": "Chargers",
-        "description": "Fast and wireless chargers compatible with various devices for on-the-go power."
-      },
-      {
-        "category_id": "cat-04",
-        "category_name": "Smart Watches",
-        "description": "Feature-packed smartwatches to help you stay connected and track your health."
-      },
-      {
-        "category_id": "cat-05",
-        "category_name": "Power Banks",
-        "description": "Portable power banks to keep your devices charged anytime, anywhere."
-      }
-    ]
+[
+  {
+    "category_id": "1",
+    "category": "Computers",
+    "description": "A wide selection of laptops, desktops, and Chromebooks suitable for personal and professional use."
+  },
+  {
+    "category_id": "2",
+    "category": "Phones",
+    "description": "Latest smartphones, from flagship to budget options, for all your communication needs."
+  },
+  {
+    "category_id": "3",
+    "category": "Chargers",
+    "description": "Fast and wireless chargers compatible with various devices for on-the-go power."
+  },
+  {
+    "category_id": "4",
+    "category": "Smart Watches",
+    "description": "Feature-packed smartwatches to help you stay connected and track your health."
+  },
+  {
+    "category_id": "5",
+    "category": "Power Banks",
+    "description": "Portable power banks to keep your devices charged anytime, anywhere."
   }
-  
+]

@@ -7,14 +7,17 @@ const Navbar = () => {
     const links=<>
      <li><NavLink 
      className={({ isActive }) =>
-                `font-bold ${isActive ? 'bg-slate-800 text-white' : 'hover:text-warning'}`
+                `font-bold ${isActive ? 'bg-black text-white' : 'hover:text-warning'}`
               } to='/'>Home</NavLink ></li>
      <li><NavLink className={({ isActive }) =>
-                `font-bold ${isActive ? 'text-warning' : 'hover:text-warning'}`
+                `font-bold ${isActive ? 'bg-black text-white' : 'hover:text-warning'}`
               } to='/statistics'>Statistics</NavLink ></li>
      <li><NavLink className={({ isActive }) =>
-                `font-bold ${isActive ? 'text-warning' : 'hover:text-warning'}`
+                `font-bold ${isActive ? 'bg-black text-white' : 'hover:text-warning'}`
               } to='/dashboard'>Dashboard</NavLink ></li>
+              <li><NavLink className={({ isActive }) =>
+                `font-bold ${isActive ? 'bg-black text-white' : 'hover:text-warning'}`
+              } to='/products'>Products</NavLink ></li>
 
     </>
     return (
@@ -49,16 +52,10 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end flex gap-4">
-            {/* <div className="indicator">
-  <span className="indicator-item badge badge-secondary bg-white text-black border-gray-300">1</span>
-  <a className="btn bg-white border px-3  rounded-full text-xl"><IoCartOutline /></a>
-</div> */}
+        
 <a className="btn bg-white border px-3  rounded-full text-xl"><IoCartOutline /></a>
 <a className="btn bg-white border px-3 rounded-full text-xl"><FaRegHeart /></a>
-{/* <div className="indicator">
-  <span className="indicator-item badge badge-secondary bg-white text-black border-gray-300">1</span>
-  <a className="btn bg-white border px-3 rounded-full text-xl"><FaRegHeart /></a>
-</div> */}
+
                
              
 
