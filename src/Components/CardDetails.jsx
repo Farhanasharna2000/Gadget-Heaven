@@ -1,25 +1,62 @@
-import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { addCart, addFavorite, getAllFavorites } from "../Utilitis";
 import { IoCartOutline } from "react-icons/io5";
-import { FaRegHeart } from "react-icons/fa6";
+import { FaRegHeart } from "react-icons/fa";
+import { useCart } from "../Utilitis/CartProvider ";
 const CardDetails = () => {
     const { cardId } = useParams();
     const data = useLoaderData();
     const [products, setProducts] = useState({});
+    const [isFavorite, setIsFavorite] = useState(false);
+
     useEffect(() => {
         const singleData = data.find(product => product.product_id === cardId);
         setProducts(singleData);
+        const favorites = getAllFavorites();
+        const isExist = favorites.find(item => item.product_id === singleData.product_id);
+        if (isExist) {
+            setIsFavorite(true)
+
+        }
     }, [cardId, data])
-    const { product_image, product_title, description, category, price, specification, rating } = products;
+    const { product_image, product_title, description, price, specification, rating } = products;
+
+    const { updatefavCount } = useCart();
+    const { favCount } = useCart();
+
+    const handleFavorite = product => {
+        addFavorite(product)
+        setIsFavorite(true)
+        updatefavCount(favCount  + 1);
+
+    }
+
+
+    const { updateCartCount } = useCart();
+    const { cartCount } = useCart();
+
+   
+
+    const handleCart = product => {
+        addCart(product);
+        updateCartCount(cartCount + 1);
+    };
     return (
-            <div className="hero bg-base-200 w-8/12 mx-auto rounded-xl ">
+        <>
+            <div className="bg-[#9538E2] text-white text-center pt-10 pb-44 mb-80 relative">
+                <h1 className="text-3xl font-bold mb-3">Product Details</h1>
+                <p className="w-3/5 mx-auto">Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
+            </div>
+            <div className="hero bg-base-200 w-8/12 mx-auto rounded-xl absolute top-[40%] left-[50%] translate-x-[-50%]">
                 <div className="hero-content flex-col lg:flex-row ">
                     <img
                         src={product_image}
-                        className="max-w-sm h-[350px] rounded-lg shadow-2xl" />
+                        className="max-w-sm h-[420px] rounded-lg shadow-2xl " />
                     <div>
-                        <h1 className="text-xl font-bold">{product_title}</h1>
-                        <p className="font-medium text-gray-700">price : ${price}</p>
+                        <h1 className="text-xl font-bold pb-3">{product_title}</h1>
+                        <p className="font-medium text-gray-700 mb-3">price : ${price}</p>
+                        <a className="px-2  rounded-3xl  bg-[#2f9c08ab] text-white">In stock</a>
                         <p className="py-6 text-gray-400">
                             {description}
                         </p>
@@ -47,15 +84,16 @@ const CardDetails = () => {
                             </div>
                             <p className="btn rounded-full">{rating}</p>
                         </div>
-                        <div className="navbar-end flex gap-4">
-                            <button className="btn bg-[#9538E2] text-white">Add To Card <IoCartOutline /></button>
+                        <div className="flex gap-2">
+                            <button onClick={() => handleCart(products)} className="btn bg-[#9538E2] text-white">Add To Card <IoCartOutline /></button>
 
-                            <a className="btn bg-white border px-3 rounded-full text-xl"><FaRegHeart /></a>
+                            <button disabled={isFavorite} onClick={() => handleFavorite(products)} className="btn bg-white border px-3 rounded-full text-xl"><FaRegHeart /></button>
 
                         </div>
                     </div>
                 </div>
             </div>
+        </>
     );
 };
 

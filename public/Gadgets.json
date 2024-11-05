@@ -1,7 +1,7 @@
 [
   {
     "product_id": "1",
-    "product_title": "High-Performance Laptop",
+    "product_title": "Ultra Laptop Pro",
     "product_image": "https://i.ibb.co.com/2tq9bGX/High-Performance-Laptop.jpg",
     "category": "Computers",
     "price": 899,
@@ -13,11 +13,11 @@
   },
   {
     "product_id": "2",
-    "product_title": "All-in-One Desktop",
-    "product_image": "https://i.ibb.co.com/JKjqCJj/All-in-One-Desktop.jpg",
+    "product_title": "Compact Desktop Hub",
+    "product_image": "https://i.ibb.co.com/hHBWV96/71-B-HEWkbs-L.jpg",
     "category": "Computers",
     "price": 1200,
-    "description": "A sleek all-in-one desktop with 1TB HDD.",
+    "description": "A powerful desktop with 32GB RAM and 512GB SSD.",
     "specification": ["23-inch display", "8GB RAM", "1TB HDD"],
     "availability": true,
     "rating": 4.2,
@@ -25,7 +25,7 @@
   },
   {
     "product_id": "3",
-    "product_title": "Gaming PC",
+    "product_title": "Extreme Gamer Station",
     "product_image": "https://i.ibb.co.com/0VD314c/Gaming-PC.jpg",
     "category": "Computers",
     "price": 1500,
@@ -37,7 +37,7 @@
   },
   {
     "product_id": "4",
-    "product_title": "Portable Laptop",
+    "product_title": "Slimline Notebook",
     "product_image": "https://i.ibb.co.com/L5nzx5B/Portable-Laptop.jpg",
     "category": "Computers",
     "price": 750,
@@ -49,7 +49,7 @@
   },
   {
     "product_id": "5",
-    "product_title": "Chromebook",
+    "product_title": "Student-Friendly Chromebook",
     "product_image": "https://i.ibb.co.com/sgbXdm2/chromebook.jpg",
     "category": "Computers",
     "price": 300,
@@ -61,7 +61,7 @@
   },
   {
     "product_id": "6",
-    "product_title": "Business Laptop",
+    "product_title": "Executive Business Laptop",
     "product_image": "https://i.ibb.co.com/nDVJm6P/Business-Laptop.jpg",
     "category": "Computers",
     "price": 1000,
@@ -72,8 +72,8 @@
     "other_field": "Comes with Windows 11 Pro"
   },
   {
-    "product_id": "1",
-    "product_title": "Flagship Smartphone",
+    "product_id": "7",
+    "product_title": "Apple iPhone 15 Pro Max",
     "product_image": "https://i.ibb.co.com/4R4vyfp/Flagship-Smartphone.jpg",
     "category": "Phones",
     "price": 999,
@@ -84,8 +84,8 @@
     "other_field": "Supports 5G"
   },
   {
-    "product_id": "2",
-    "product_title": "Budget Smartphone",
+    "product_id": "8",
+    "product_title": "Smart Budget Phone",
     "product_image": "https://i.ibb.co.com/k3n6zHp/Budget-Smartphone.jpg",
     "category": "Phones",
     "price": 150,
@@ -96,8 +96,8 @@
     "other_field": "Long-lasting battery"
   },
   {
-    "product_id": "1",
-    "product_title": "Fast Charger",
+    "product_id": "9",
+    "product_title": "Speedy USB-C Charger",
     "product_image": "https://i.ibb.co.com/ygxMp8P/Fast-Charger.jpg",
     "category": "Chargers",
     "price": 60,
@@ -108,8 +108,8 @@
     "other_field": "Compact and portable"
   },
   {
-    "product_id": "2",
-    "product_title": "Wireless Charger",
+    "product_id": "10",
+    "product_title": "Qi Wireless Power Pad",
     "product_image": "https://i.ibb.co.com/9ywKk2m/Wireless-Charger.jpg",
     "category": "Chargers",
     "price": 80,
@@ -120,4 +120,3 @@
     "other_field": "Supports fast wireless charging"
   }
 ]
-  

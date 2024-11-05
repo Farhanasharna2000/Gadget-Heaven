@@ -8,11 +8,11 @@ const Products = () => {
 
     const handleSort=sortBy=>{
         if (sortBy == 'price') {
-            // sort by popularity
+            
             const sorted = [...data].sort((a, b) =>  a.price - b.price)
             setProducts(sorted)
           } else if (sortBy == 'rating') {
-            // asc sort by rating
+            
             const sorted = [...data].sort((a, b) => a.rating - b.rating)
             setProducts(sorted)
           }
