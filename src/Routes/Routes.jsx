@@ -30,6 +30,9 @@ const router = createBrowserRouter([
             element: <GadgetCards />,
             loader: () => fetch('../Gadgets.json'), 
           },
+        
+         
+
           
         ],
       },
@@ -45,10 +48,12 @@ const router = createBrowserRouter([
 
       },
       {
-        path: "/category/:category/cards/:cardId",
-        element: <CardDetails />,
+        path:"/category/:category/cards/:cardId",
+         element:<CardDetails />,
         loader: () => fetch('../Gadgets.json'),
+
       },
+      
       {
         path: "/statistics",
         element: <Statistics />,
