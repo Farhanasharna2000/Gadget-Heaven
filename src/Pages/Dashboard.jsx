@@ -45,7 +45,6 @@ const Dashboard = () => {
         setCarts([]);
     
         localStorage.removeItem('carts');
-        localStorage.removeItem('favorites');
         Navigate('/');
     };
 

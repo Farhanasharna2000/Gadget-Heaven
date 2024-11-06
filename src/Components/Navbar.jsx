@@ -47,8 +47,8 @@ const Navbar = () => {
                     className={({ isActive }) =>
                         `font-bold ${isActive ? 'bg-black text-white' : `${hoverTextColor} ${textColor}`}`
                     }
-                    to='/products'>
-                    Products
+                    to='/about'>
+                    About us
                 </NavLink>
             </li>
         </>

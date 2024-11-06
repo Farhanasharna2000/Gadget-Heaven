@@ -39,8 +39,15 @@ const CardDetails = () => {
    
 
     const handleCart = product => {
-        addCart(product);
-        updateCartCount(cartCount + 1);
+ try{
+    addCart(product);
+    updateCartCount(cartCount + 1);
+
+}
+catch (error) {
+    console.log(error);
+    
+}
     };
     return (
         <>

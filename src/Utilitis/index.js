@@ -35,7 +35,8 @@ const addCart = product => {
     const carts = getAllCarts();
     const isExist = carts.find(item => item.product_id === product.product_id);
     if (isExist) {
-        return toast.error('Already in cart!');
+         toast.error('Already in cart!');
+         throw new Error('already exist');
     }
     carts.push(product);
     localStorage.setItem('carts', JSON.stringify(carts));
