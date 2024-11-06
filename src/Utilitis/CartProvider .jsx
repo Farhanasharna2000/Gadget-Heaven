@@ -38,4 +38,5 @@ export const CartProvider = ({ children }) => {
 CartProvider.propTypes = {
     children: PropTypes.object, 
 };
+// eslint-disable-next-line react-refresh/only-export-components
 export const useCart = () => useContext(CartContext);

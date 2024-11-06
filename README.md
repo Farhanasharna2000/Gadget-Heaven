@@ -13,31 +13,31 @@ https://github.com/ProgrammingHero1/B10-A8-gadget-heaven/blob/main/Batch-10_Assi
 
 # List of React Fundamental concepts used in the project:
 
-- Components.
+- Components
 
-- State Management.
+- State Management
 
-- Props.
+- Props
 
-- Context API .
+- Context API 
 
-- Event Handling.
+- Event Handling
 
-- Conditional Rendering.
+- Conditional Rendering
 
-- useEffect Hook.
+- useEffect Hook
 
-- React Router.
+- React Router
 
-- Local Storage.
+- Local Storage
 
-- Custom Hooks.
+- Custom Hooks
 
-- Styling.
+- Styling
 
-- Forms.
+- Forms
 
-- JSX.
+- JSX
 
 # In my project, data handling and management are done using two main approaches:
 

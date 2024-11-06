@@ -15,7 +15,9 @@ const MainLayOut = () => {
         <title>Gadget Heaven</title> {/* Default title */}
       </Helmet>
           <Navbar  />  
-        <Outlet/> 
+        <div className="min-h-[calc(100vh-400px)]">
+        <Outlet/>
+        </div> 
         <Footer/>
         </CartProvider>
         </div>
