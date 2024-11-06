@@ -18,39 +18,36 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
-        loader: () => fetch('../Category.json'),
+        loader: () => fetch('/Category.json'),
         children: [
           {
             path: "/",
             element: <GadgetCards />,
-            loader: () => fetch('../Gadgets.json'),
+            loader: () => fetch('/Gadgets.json'),
           },
           {
             path: "/category/:category",
             element: <GadgetCards />,
-            loader: () => fetch('../Gadgets.json'), 
+            loader: () => fetch('/Gadgets.json'), 
           },
-        
-         
-
-          
+    
         ],
       },
       {
         path: "cards/:cardId",
         element: <CardDetails />,
-        loader: () => fetch('../Gadgets.json'),
+        loader: () => fetch('/Gadgets.json'),
       },
       {
         path:"/card-details/:cardId",
          element:<CardDetails />,
-        loader: () => fetch('../Gadgets.json'),
+        loader: () => fetch('/Gadgets.json'),
 
       },
       {
         path:"/category/:category/cards/:cardId",
          element:<CardDetails />,
-        loader: () => fetch('../Gadgets.json'),
+        loader: () => fetch('/Gadgets.json'),
 
       },
       
