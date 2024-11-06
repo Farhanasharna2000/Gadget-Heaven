@@ -51,15 +51,15 @@ catch (error) {
     };
     return (
         <>
-            <div className="bg-[#9538E2] text-white text-center mt-3 pt-10 pb-44 mb-96 relative">
+            <div className="bg-[#9538E2] text-white text-center mt-3 pt-10 pb-44 lg:mb-96 mb-[550px] relative">
                 <h1 className="text-3xl font-bold mb-3">Product Details</h1>
-                <p className="w-3/5 mx-auto">Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
+                <p className="lg:w-3/5 mx-auto">Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
             </div>
-            <div className="hero bg-base-200 w-8/12 mx-auto rounded-xl absolute top-[45%] left-[50%] translate-x-[-50%]">
+            <div className="hero bg-base-200 w-8/12 mx-auto rounded-xl absolute lg:top-[45%] top-[280px] left-[50%] translate-x-[-50%]">
                 <div className="hero-content flex-col lg:flex-row ">
                     <img
                         src={product_image}
-                        className="lg:max-w-sm lg:h-[420px] rounded-lg shadow-2xl " />
+                        className="lg:max-w-sm lg:h-[420px] h-48 w-full rounded-lg shadow-2xl " />
                     <div>
                         <h1 className="text-xl font-bold pb-3">{product_title}</h1>
                         <p className="font-medium text-gray-700 mb-3">price : ${price}</p>

@@ -118,5 +118,44 @@
     "availability": true,
     "rating": 4.5,
     "other_field": "Supports fast wireless charging"
+  },
+  
+    {
+      "product_id": "11",
+      "product_title": "Smart Watch X Pro",
+      "product_image": "https://i.ibb.co.com/rGVZfZf/x-watch-1-pro.jpg",
+      "category": "Smart Watches",
+      "price": 199,
+      "description": "Feature-packed smartwatch with heart rate and activity tracking.",
+      "specification": ["Heart Rate Monitor", "GPS", "Water-Resistant", "Bluetooth Connectivity"],
+      "availability": true,
+      "rating": 4.3,
+      "other_field": "Includes 1-year warranty"
+    },
+    {
+      "product_id": "12",
+      "product_title": "FitLife Smart Watch",
+      "product_image": "https://i.ibb.co.com/6Ydqfwr/images.jpg",
+      "category": "Smart Watches",
+      "price": 149,
+      "description": "A fitness smartwatch with extended battery life and sleep tracking.",
+      "specification": ["Sleep Tracking", "7-Day Battery Life", "Step Counter", "Water-Resistant"],
+      "availability": true,
+      "rating": 4.1,
+      "other_field": "Includes 6-month warranty"
+    },
+    {
+      "product_id": "13",
+      "product_title": "Eco Smart Tracker",
+      "product_image": "https://i.ibb.co.com/c15kdsj/images-1.jpg",
+      "category": "Smart Watches",
+      "price": 179,
+      "description": "Eco-friendly smartwatch with solar charging and advanced health tracking.",
+      "specification": ["Solar Charging", "Heart Rate & SpO2 Monitor", "Sleep & Stress Tracking", "Eco-Friendly Materials"],
+      "availability": true,
+      "rating": 4.4,
+      "other_field": "Includes 2-year warranty"
   }
-]
+  ]
+  
+
