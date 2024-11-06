@@ -7,7 +7,7 @@ import { CartProvider } from "../Utilitis/CartProvider ";
 const MainLayOut = () => {
     
     return (
-        <div className="w-11/12 mx-auto">
+        <div >
             <CartProvider>
              <Toaster />
           <Navbar  />  

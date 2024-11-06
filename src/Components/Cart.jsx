@@ -5,7 +5,7 @@ const Cart = ({ cart }) => {
     const { description, product_title, price, product_image } = cart || {};
 
     return (
-        <div className="relative bg-base-200 my-8 rounded-xl p-6">
+        <div className="relative bg-base-200 my-8 rounded-xl p-6 w-11/12 mx-auto">
             <div className="absolute top-4 right-4 text-rose-600 text-3xl cursor-pointer">
                 <RxCrossCircled />
             </div>

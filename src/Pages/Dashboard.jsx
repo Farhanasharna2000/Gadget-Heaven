@@ -66,7 +66,7 @@ const Dashboard = () => {
                 </div>
             </div>
             
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center w-11/12 mx-auto">
                 <div>
                     <h1 className="font-bold">{view === 'cart' ? 'Cart' : 'Wishlist'}</h1>
                 </div>

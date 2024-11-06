@@ -7,6 +7,7 @@ import Error from "../Components/Error";
 import CardDetails from "../Components/CardDetails";
 import GadgetCards from "../Components/GadgetCards";
 import Products from "../Pages/Products";
+import ProductDetails from "../Components/ProductDetails";
 
 
 const router = createBrowserRouter([
@@ -63,7 +64,11 @@ const router = createBrowserRouter([
         element: <Products />,
         loader: () => fetch('../Gadgets.json'),
       },
-    
+      {
+        path: "/products/cards/:productId",
+        element: <ProductDetails />,
+        loader: () => fetch('../Gadgets.json'),
+      },
     ],
   },
 ]);

@@ -4,14 +4,15 @@ import { addCart, addFavorite, getAllFavorites } from "../Utilitis";
 import { IoCartOutline } from "react-icons/io5";
 import { FaRegHeart } from "react-icons/fa";
 import { useCart } from "../Utilitis/CartProvider ";
-const CardDetails = () => {
-    const { cardId } = useParams();
+const ProductDetails = () => {
+    const {productId} = useParams();
+    
     const data = useLoaderData();
     const [products, setProducts] = useState({});
     const [isFavorite, setIsFavorite] = useState(false);
 
     useEffect(() => {
-        const singleData = data.find(product => product.product_id === cardId);
+        const singleData = data.find(product => product.product_id === productId);
         setProducts(singleData);
         const favorites = getAllFavorites();
         const isExist = favorites.find(item => item.product_id === singleData.product_id);
@@ -19,7 +20,7 @@ const CardDetails = () => {
             setIsFavorite(true)
 
         }
-    }, [cardId, data])
+    }, [productId, data])
     const { product_image, product_title, description, price, specification, rating } = products;
 
     const { updatefavCount } = useCart();
@@ -44,11 +45,11 @@ const CardDetails = () => {
     };
     return (
         <>
-            <div className="bg-[#9538E2] text-white text-center mt-3 pt-10 pb-44 mb-96 relative">
+            <div className="bg-[#9538E2] text-white text-center pt-10 pb-44 mb-80 relative ">
                 <h1 className="text-3xl font-bold mb-3">Product Details</h1>
                 <p className="w-3/5 mx-auto">Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
             </div>
-            <div className="hero bg-base-200 w-8/12 mx-auto rounded-xl absolute top-[45%] left-[50%] translate-x-[-50%]">
+            <div className="hero bg-base-200 w-8/12 mx-auto rounded-xl absolute top-[40%] left-[50%] translate-x-[-50%]">
                 <div className="hero-content flex-col lg:flex-row ">
                     <img
                         src={product_image}
@@ -97,4 +98,5 @@ const CardDetails = () => {
     );
 };
 
-export default CardDetails;
+
+export default ProductDetails;

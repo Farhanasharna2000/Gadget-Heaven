@@ -8,7 +8,8 @@ const Modal = ({ onClose, totalCost }) => {
                 <div className="modal-box text-center">
                     <img className="mx-auto mb-3" src={logo} alt="Payment Success" />
                     <h3 className="font-bold text-lg">Payment Successfully</h3>
-                    <p className="py-4">Thanks for purchasing.</p>
+                    <div className="divider"></div>
+                    <p className="pb-4">Thanks for purchasing.</p>
                     <p className="mb-4">Total: ${totalCost.toFixed(2)}</p>
                     <div>
                         <button className="btn px-10 rounded-3xl" onClick={onClose}>Close</button>

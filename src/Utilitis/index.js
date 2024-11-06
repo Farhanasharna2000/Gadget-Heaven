@@ -12,6 +12,7 @@ const getAllCarts = () => {
 
 
 const getCartCount = () => {
+    
     const carts = localStorage.getItem('carts');
     return carts ? JSON.parse(carts).length : 0;
 };
@@ -46,4 +47,4 @@ const addCart = product => {
 
 
 
-export { addFavorite, getAllFavorites,addCart,  getAllCarts ,getCartCount,getFavoriteCount};
+export {addFavorite, getAllFavorites,addCart,  getAllCarts ,getCartCount,getFavoriteCount};

@@ -8,10 +8,10 @@ const Home = () => {
     
    
     return (
-        <div>
+        <div className="w-11/12 mx-auto">
           <Banner /> 
           <Title/>
-          <div className="flex ">
+          <div className="flex gap-6">
 
 <div className="w-1/5">
 <Categories categories={categories}  />
