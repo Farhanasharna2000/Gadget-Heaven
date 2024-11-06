@@ -4,6 +4,7 @@ import Cart from "../Components/Cart";
 import Modal from "../Components/Modal";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import { useCart } from "../Utilitis/CartProvider ";
 
 const Dashboard = () => {
     const [carts, setCarts] = useState([]);
@@ -11,6 +12,7 @@ const Dashboard = () => {
     const [totalAmount, setTotalAmount] = useState(0);
     const [showModal, setShowModal] = useState(false);
     const Navigate = useNavigate();
+    const { updateCartCount } = useCart();
     useEffect(() => {
         if (view === 'cart') {
             const cartItems = getAllCarts();
@@ -45,6 +47,7 @@ const Dashboard = () => {
         setCarts([]);
     
         localStorage.removeItem('carts');
+        updateCartCount(0); 
         Navigate('/');
     };
 
