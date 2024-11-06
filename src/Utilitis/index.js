@@ -12,7 +12,6 @@ const getAllCarts = () => {
 
 
 const getCartCount = () => {
-    
     const carts = localStorage.getItem('carts');
     return carts ? JSON.parse(carts).length : 0;
 };
