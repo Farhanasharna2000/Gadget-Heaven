@@ -52,7 +52,7 @@ const CardDetails = () => {
                 <div className="hero-content flex-col lg:flex-row ">
                     <img
                         src={product_image}
-                        className="max-w-sm h-[420px] rounded-lg shadow-2xl " />
+                        className="lg:max-w-sm lg:h-[420px] rounded-lg shadow-2xl " />
                     <div>
                         <h1 className="text-xl font-bold pb-3">{product_title}</h1>
                         <p className="font-medium text-gray-700 mb-3">price : ${price}</p>

@@ -35,6 +35,7 @@ const Dashboard = () => {
 
     const handlePurchase = () => {
         console.log("Purchase clicked!"); 
+       
         setShowModal(true); 
     };
     
@@ -55,7 +56,7 @@ const Dashboard = () => {
         <title>Dashboard | Gadget Heaven</title>
       </Helmet>
                 <h1 className="text-3xl font-bold mb-3">Dashboard</h1>
-                <p className="w-3/5 mx-auto">
+                <p className="lg:w-3/5 mx-auto">
                     Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!
                 </p>
                 <div className="flex gap-2 justify-center pt-4">
@@ -79,7 +80,7 @@ const Dashboard = () => {
                 <div className="flex items-center gap-3">
                     {view === 'cart' && (
                         <>
-                            <h2>Total cost: ${totalAmount.toFixed(2)}</h2>
+                            <h2 className="text-sm lg:text-xl">Total cost: ${totalAmount.toFixed(2)}</h2>
                             <button className="btn rounded-3xl" onClick={handleSortByPrice}>
                                 Sort by Price
                             </button>

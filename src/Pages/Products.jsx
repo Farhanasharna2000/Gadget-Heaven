@@ -19,7 +19,7 @@ const Products = () => {
         <title>Products | Gadget Heaven</title>
       </Helmet>
         <div>
-          <h1 className="text-3xl font-bold my-5">
+          <h1 className="lg:text-3xl text-xl font-bold my-5">
             Sort Popular Products by Rating
           </h1>
         </div>

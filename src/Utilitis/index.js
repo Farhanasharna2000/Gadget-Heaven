@@ -25,21 +25,21 @@ const addFavorite = product => {
     const favorites = getAllFavorites();
     const isExist = favorites.find(item => item.product_id === product.product_id);
     if (isExist) {
-        return toast.error('Already in favorites!');
+        return toast.error('Already in wishlist!');
     }
     favorites.push(product);
     localStorage.setItem('favorites', JSON.stringify(favorites));
-    return toast.success('Added to favorites!');
+    return toast.success('Adding item to wishlist');
 };
 const addCart = product => {
     const carts = getAllCarts();
     const isExist = carts.find(item => item.product_id === product.product_id);
     if (isExist) {
-        return toast.error('Already in carts!');
+        return toast.error('Already in cart!');
     }
     carts.push(product);
     localStorage.setItem('carts', JSON.stringify(carts));
-    return toast.success('Added to carts!');
+    return toast.success('Adding item to cart');
 };
 
 

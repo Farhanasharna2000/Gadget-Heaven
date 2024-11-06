@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import bannerImg from "../assets/banner.jpg";
 const Banner = () => {
     return (
-        <div className="mb-96 ">
+        <div className="lg:mb-96 mb-48">
            <div className="hero bg-[#9538E2] min-h-screen relative rounded-b-2xl">
   <div className="hero-content text-center pb-32 ">
     <div className="">
@@ -15,7 +15,7 @@ const Banner = () => {
   </div>
 </div> 
 <div>
-<img className="w-3/4 rounded-xl  absolute top-[80%] left-[50%] translate-x-[-50%] outline outline-white shadow-lg outline-offset-8  h-[500px]" src={bannerImg} alt="" />
+<img className="w-3/4 rounded-xl  absolute top-[360px] lg:top-[80%] left-[50%] translate-x-[-50%] outline outline-white shadow-lg outline-offset-8  lg:h-[500px]" src={bannerImg} alt="" />
 </div>
         </div>
     );

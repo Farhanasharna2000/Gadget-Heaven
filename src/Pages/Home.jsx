@@ -15,9 +15,9 @@ const Home = () => {
       </Helmet>
           <Banner /> 
           <Title/>
-          <div className="flex gap-6">
+          <div className="lg:flex gap-6">
 
-<div className="w-1/5">
+<div className="lg:w-1/5">
 <Categories categories={categories}  />
 </div>    
 <div>
