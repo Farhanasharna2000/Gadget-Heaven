@@ -45,4 +45,5 @@ const addCart = product => {
 
 
 
+
 export { addFavorite, getAllFavorites,addCart,  getAllCarts ,getCartCount,getFavoriteCount};

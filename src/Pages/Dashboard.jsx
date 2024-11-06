@@ -38,10 +38,12 @@ const Dashboard = () => {
     
     const handleCloseModal = () => {
         setShowModal(false);
-        setTotalAmount(0); 
+        setTotalAmount(0);
         setCarts([]);
-    };
     
+        localStorage.removeItem('carts');
+        localStorage.removeItem('favorites');
+    };
 
     return (
         <>
