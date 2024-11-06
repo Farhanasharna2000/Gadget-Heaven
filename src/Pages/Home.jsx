@@ -2,6 +2,7 @@ import { Outlet, useLoaderData } from "react-router-dom";
 import Banner from "../Components/Banner";
 import Categories from "../Components/Categories";
 import Title from "../Components/Title";
+import { Helmet } from "react-helmet";
 
 const Home = () => {
     const categories = useLoaderData();
@@ -9,6 +10,9 @@ const Home = () => {
    
     return (
         <div className="w-11/12 mx-auto">
+                <Helmet>
+        <title>Gadgets | Gadget Heaven</title>
+      </Helmet>
           <Banner /> 
           <Title/>
           <div className="flex gap-6">

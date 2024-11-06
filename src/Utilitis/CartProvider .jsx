@@ -1,5 +1,6 @@
 import { createContext, useContext, useState, useEffect } from 'react';
 import { getCartCount, getFavoriteCount } from '../Utilitis';
+import PropTypes from 'prop-types';
 
 const CartContext = createContext();
 
@@ -34,5 +35,7 @@ export const CartProvider = ({ children }) => {
         </CartContext.Provider>
     );
 };
-
+CartProvider.propTypes = {
+    children: PropTypes.object, 
+};
 export const useCart = () => useContext(CartContext);

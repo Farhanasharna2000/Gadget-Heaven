@@ -2,13 +2,15 @@ import { useEffect, useState } from "react";
 import { getAllFavorites, getAllCarts } from "../Utilitis";
 import Cart from "../Components/Cart";
 import Modal from "../Components/Modal";
+import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const Dashboard = () => {
     const [carts, setCarts] = useState([]);
     const [view, setView] = useState('cart'); 
     const [totalAmount, setTotalAmount] = useState(0);
     const [showModal, setShowModal] = useState(false);
-    
+    const Navigate = useNavigate();
     useEffect(() => {
         if (view === 'cart') {
             const cartItems = getAllCarts();
@@ -43,11 +45,15 @@ const Dashboard = () => {
     
         localStorage.removeItem('carts');
         localStorage.removeItem('favorites');
+        Navigate('/');
     };
 
     return (
         <>
             <div className="bg-[#9538E2] text-white text-center py-8 mb-10 ">
+            <Helmet>
+        <title>Dashboard | Gadget Heaven</title>
+      </Helmet>
                 <h1 className="text-3xl font-bold mb-3">Dashboard</h1>
                 <p className="w-3/5 mx-auto">
                     Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!

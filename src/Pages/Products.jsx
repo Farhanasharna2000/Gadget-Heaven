@@ -1,6 +1,7 @@
 import { useLoaderData } from "react-router-dom";
 import Product from "../Components/Product";
 import { useState } from "react";
+import { Helmet } from "react-helmet";
 
 const Products = () => {
   const data = useLoaderData();
@@ -14,6 +15,9 @@ const Products = () => {
   return (
     <>
       <div className="flex justify-between items-center w-11/12 mx-auto">
+      <Helmet>
+        <title>Products | Gadget Heaven</title>
+      </Helmet>
         <div>
           <h1 className="text-3xl font-bold my-5">
             Sort Popular Products by Rating
