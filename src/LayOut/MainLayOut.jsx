@@ -12,7 +12,7 @@ const MainLayOut = () => {
             <CartProvider>
              <Toaster />
              <Helmet>
-        <title>Gadget Heaven</title> {/* Default title */}
+        <title>Gadget Heaven</title> 
       </Helmet>
           <Navbar  />  
         <div className="min-h-[calc(100vh-475px)]">
