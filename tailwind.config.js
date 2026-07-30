@@ -1,8 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 import daisyui from 'daisyui'
-import { createRequire } from 'module';
-
-const require = createRequire(import.meta.url);
 
 export default {
   content: [
